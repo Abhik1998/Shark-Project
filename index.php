@@ -32,6 +32,32 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '393687624156866',
+          xfbml      : true,
+          version    : 'v2.3'
+        });
+      };
+
+      FB.ui(
+      {
+        method: 'share',
+        href: 'https://developers.facebook.com/docs/'
+      }, function(response){});
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
+
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
@@ -60,6 +86,14 @@
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <div
+                          class="fb-like"
+                          data-send="true"
+                          data-width="450"
+                          data-show-faces="true">
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -130,6 +164,8 @@
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
+
+
 
 </body>
 
