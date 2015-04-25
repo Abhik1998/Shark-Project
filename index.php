@@ -94,12 +94,7 @@
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
-                                    <div
-                                      class="fb-like"
-                                      data-send="true"
-                                      data-width="450"
-                                      data-show-faces="true">
-                                    </div>
+                <div class="fb-like" data-href="https://www.facebook.com/WaTerMelOn2015425" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
             </div>
             <!-- /.navbar-collapse -->
         </div>
