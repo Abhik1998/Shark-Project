@@ -34,31 +34,19 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
    <script>
-      function facebookInit() {
-   		FB.ui(
-	    {
-	    	method: 'share',
-	        href: 'https://develpers.facebook.com/docs/'
-	    }, function(response){});
-	}
-
       window.fbAsyncInit = function() {
         FB.init({
           appId      : '393687624156866',
           xfbml      : true,
           version    : 'v2.3'
-        });
-
-	    if (typeof facebookInit == 'function') {
-	        facebookInit();
-	    }        
+        });    
       };
 
       (function(d, s, id){
          var js, fjs = d.getElementsByTagName(s)[0];
          if (d.getElementById(id)) {return;}
          js = d.createElement(s); js.id = id;
-         js.src = "https://connect.facebook.net/en_US/sdk.js%20net::ERR_FILE_NOT_FOUND";
+         js.src = "https://connect.facebook.net/en_US/sdk.js";
          fjs.parentNode.insertBefore(js, fjs);
        }(document, 'script', 'facebook-jssdk'));
     </script>
