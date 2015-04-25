@@ -1,18 +1,55 @@
 <php
 
+  if($_SERVER['REQUEST_METHOD']=='POST'){
+
+  $errors= array();
+   if (empty($_POST['shower'])){
+    $errors[]='Your forgot to enter shower min.';
+   }else{
+    $fn = trim($POST['shower']);
+   }
+if (empty($_POST['wash_teeth'])){
+    $errors[]='Your forgot to enter shower washteeth.';
+   }else{
+    $ln = trim($POST['wash_teeth']);
+   }
+   if (empty($_POST['dishes'])){
+    $errors[]='Your forgot to enter dishes min.';
+   }else{
+    $gn = trim($POST['dishes']);
+   }
+   if (empty($_POST['toilet'])){
+    $errors[]='Your forgot to enter toilet min.';
+   }else{
+    $hn = trim($POST['toilet']);
+   }
+   if (empty($_POST['laundry'])){
+    $errors[]='Your forgot to enter laundry min.';
+   }else{
+    $mn = trim($POST['laundry']);
+   }
+
+  }
+  if (empty($errors)){
+
   DEFINE ('DB_USER','aztecaweb11');
   DEFINE ('DB_PASSWORD','soccer11!!');
   DEFINE ('DB_HOST','localhost');
-  DEFINE ('DB_NAME','Webusers');
+  DEFINE ('DB_NAME','book');
 
   $dbc = @mysqli_connect (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) OR 
   die('Could not connect to MySQL:' . mysqli_connect_error() );
 
-  $q= "INSERT INTO users (shower, wash_teeth, dishes, toilet, laundry), NOW())";
-  $r= @mysqli_query($dbc, $q);
+  $sql = "INSERT INTO book (shower, washteeth, dishes, toilet,laundry) VALUES ('$fn', '$ln','$gn','$hn','$mn', NOW())";
+  $r= @mysqli_query($dbc, $sql);
 
-  mysqli_close($dbc);
+
+
+  mysqli_close($sql);
   exit();
+
+  }
+  }
 
 
 
