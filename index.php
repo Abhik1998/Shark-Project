@@ -56,9 +56,12 @@
        }(document, 'script', 'facebook-jssdk'));
     </script>
 
-<?php
-    echo "My first PHP script!";
-?>
+    <div
+      class="fb-like"
+      data-send="true"
+      data-width="450"
+      data-show-faces="true">
+    </div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
