@@ -56,12 +56,7 @@
        }(document, 'script', 'facebook-jssdk'));
     </script>
 
-    <div
-      class="fb-like"
-      data-send="true"
-      data-width="450"
-      data-show-faces="true">
-    </div>
+
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -91,6 +86,14 @@
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <div
+                          class="fb-like"
+                          data-send="true"
+                          data-width="450"
+                          data-show-faces="true">
+                        </div>
                     </li>
                 </ul>
             </div>
