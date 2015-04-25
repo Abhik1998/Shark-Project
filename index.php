@@ -17,6 +17,7 @@
 
     <!-- Custom CSS -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -94,9 +95,16 @@
         </div>
         <!-- /.container -->
     </nav>
-
+    <header id="top" class="header">
+    	<div id="top-content">
+			<div class="text-vertical-center">
+				<h1><span style="color: #43B3AE"> Water</span> Conservation</h1>
+				<h3>Help end the California drought.</h3>
+			</div>
+		</div>
+    </header>
     <!-- Intro Section -->
-    <section id="intro" class="intro-section">
+    <!-- <section id="intro" class="intro-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -106,14 +114,14 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
     <!-- About Section -->
-    <section id="about" class="about-section">
+    <section id="facts" class="facts-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>About Section</h1>
+                    <h1>Facts</h1>
                 </div>
             </div>
         </div>
