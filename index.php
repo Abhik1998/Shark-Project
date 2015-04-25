@@ -55,6 +55,10 @@
        }(document, 'script', 'facebook-jssdk'));
     </script>
 
+<?php
+    echo "My first PHP script!";
+?>
+
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
