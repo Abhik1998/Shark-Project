@@ -160,7 +160,29 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Services Section</h1>
+                    <h1>How much water did you use today</h1>
+                    <table>
+                          <tr>
+                            <td>Taking Shower</td>
+                            <td><input type="text" name="stime"> mins</td>      
+                          </tr>
+                          <tr>
+                            <td>Flushing Toilets</td>
+                            <td><input type="text" name="ftime"> times</td>     
+                          </tr>
+                          <tr>
+                            <td>Washing Dishes</td>
+                            <td><input type="text" name="wtime"> mins</td>      
+                          </tr>
+                          <tr>
+                            <td>Doing Laundry</td>
+                            <td><input type="text" name="ltime"> times</td>     
+                          </tr>
+                          <tr>
+                            <td>Brushing Teeth</td>
+                            <td><input type="text" name="btime"> mins</td>      
+                          </tr>
+                    </table>
                 </div>
             </div>
         </div>
