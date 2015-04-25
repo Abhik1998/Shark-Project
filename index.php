@@ -126,7 +126,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Facts About California's Water Usage</h1>
+                    <h1>Facts About San Diego's Water Usage</h1>
                 </div>
             </div>
             <div class="row">
@@ -149,8 +149,15 @@
                         <i class="fa fa-circle fa-stack-2x blue"></i>
                         <i class="fa fa-tint fa-stack-1x white"></i>
                     </span>                 
-                    <div>San Diego's rainfall in 2014 was<div class="blue big-font">49%</div>of normal levels.
-                </div>                            		
+                    <div>San Diego's rainfall in 2014 was<div class="blue big-font">49%</div>of normal levels.</div>
+                </div>    
+                <div class ="facts-wrapper col-md-3 col-sm-6">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x blue"></i>
+                        <i class="fa fa-chevron-down fa-stack-1x white"></i>
+                    </span>                 
+                    <div>The water supply in San Diego has already been cut by<div class="blue big-font">15%.</div></div>
+                </div>                          		
 	         </div>
         </div>
     </section>
