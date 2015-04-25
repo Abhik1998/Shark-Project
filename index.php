@@ -63,6 +63,7 @@
        }(document, 'script', 'facebook-jssdk'));
     </script>
 
+
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
@@ -93,6 +94,12 @@
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
+                                    <div
+                                      class="fb-like"
+                                      data-send="true"
+                                      data-width="450"
+                                      data-show-faces="true">
+                                    </div>
             </div>
             <!-- /.navbar-collapse -->
         </div>
