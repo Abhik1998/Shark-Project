@@ -18,6 +18,7 @@
     <!-- Custom CSS -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -104,7 +105,7 @@
     <header id="top" class="header">
     	<div id="top-content">
 			<div class="text-vertical-center">
-				<h1><span style="color: #43B3AE"> Water</span> Conservation</h1>
+				<h1><span class="blue">Water</span>Melon</h1>
 				<h3>Help end the California drought.</h3>
 			</div>
 		</div>
@@ -127,9 +128,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Facts</h1>
+                    <h1>Facts About California's Water Usage</h1>
                 </div>
             </div>
+            <div class="row">
+        		<div class ="facts-wrapper col-md-3 col-sm-6">
+            		<span class="fa-stack fa-4x">
+            			<i class="fa fa-circle fa-stack-2x blue"></i>
+	            		<i class="fa fa-home fa-stack-1x white"></i>
+	            	</span>            		
+            		<div class="blue big-font">60%</div> of water usage in San Diego is residential.
+        		</div>
+	         </div>
         </div>
     </section>
 
