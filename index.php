@@ -147,8 +147,15 @@
             			<i class="fa fa-circle fa-stack-2x blue"></i>
 	            		<i class="fa fa-user fa-stack-1x white"></i>
 	            	</span>            		
-            		<div class="blue big-font">150 gal.</div> of water is used in a day by the average person.
-        		</div>        		
+            		<div>An average San Diegan uses <div class="blue big-font">150 gal.</div> of water a day.</div>
+        		</div>  
+                <div class ="facts-wrapper col-md-3 col-sm-6">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x blue"></i>
+                        <i class="fa fa-tint fa-stack-1x white"></i>
+                    </span>                 
+                    <div>San Diego's rainfall in 2014 was<div class="blue big-font">49%</div>of normal levels.
+                </div>                            		
 	         </div>
         </div>
     </section>
