@@ -78,9 +78,6 @@
                     <li>
                         <a class="page-scroll" href="#services">Track Your Water Usage</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
                 </ul>
                 <div class="fb-like" data-href="https://www.facebook.com/WaTerMelOn2015425" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
             </div>
@@ -91,7 +88,7 @@
     <header id="top" class="header">
     	<div id="top-content">
 			<div class="text-vertical-center">
-				<h1><span class="blue">Water</span>Melon</h1>
+				<h1><span class="blue">WaTer</span>MelOn</h1>
 				<h3>Help end the California drought.</h3>
 			</div>
 		</div>
@@ -114,7 +111,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Facts About San Diego's Water Usage</h1>
+                    <h1>Facts About <span class="blue">San Diego</span>'s Water Usage</h1>
                 </div>
             </div>
             <div class="row">
@@ -154,36 +151,43 @@
     <section id="services" class="services-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <h1>How much water did you use today</h1>
-                    <table>
-                          <tr>
-                            <td>Taking Shower</td>
-                            <td><input type="text" name="stime"> mins</td>      
-                          </tr>
-                          <tr>
-                            <td>Flushing Toilets</td>
-                            <td><input type="text" name="ftime"> times</td>     
-                          </tr>
-                          <tr>
-                            <td>Washing Dishes</td>
-                            <td><input type="text" name="wtime"> mins</td>      
-                          </tr>
-                          <tr>
-                            <td>Doing Laundry</td>
-                            <td><input type="text" name="ltime"> times</td>     
-                          </tr>
-                          <tr>
-                            <td>Brushing Teeth</td>
-                            <td><input type="text" name="btime"> mins</td>      
-                          </tr>
-                    </table>
+                <h1>How much water did <span class="blue">YOU</span> use today?</h1>
+                <div class="col-md-6 col-sm-10 col-md-offset-1">
+                    <div id="stats-container">
+                        <div class="row">
+                          <div class="col-md-4">Showering</div>
+                          <div class="col-md-4"><input type="text" name="stime"></div><div class="col-md-4">mins</div>    
+                        </div>
+                        <div class="row">
+                          <div class="col-md-4">Flushing Toilets</div>
+                          <div class="col-md-4"><input type="text" name="stime"></div><div class="col-md-4">times</div>   
+                        </div>
+                        <div class="row">
+                          <div class="col-md-4">Washing Dishes</div>
+                          <div class="col-md-4"><input type="text" name="stime"></div><div class="col-md-4">mins</div>    
+                        </div>
+                        <div class="row">
+                          <div class="col-md-4">Doing Laundry</div>
+                          <div class="col-md-4"><input type="text" name="stime"></div><div class="col-md-4">times</div>    
+                        </div>
+                        <div class="row">
+                          <div class="col-md-4">Brushing Teeth</div>
+                          <div class="col-md-4"><input type="text" name="stime"></div><div class="col-md-4">mins</div>    
+                        </div>    
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button type="button" class="btn btn-default btn-lg">
+                                  Submit
+                                </button>
+                            </div>
+                        </div>    
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Section 
     <section id="contact" class="contact-section">
         <div class="container">
             <div class="row">
@@ -192,7 +196,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>

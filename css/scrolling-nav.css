@@ -63,6 +63,10 @@ of those sections to manage the look and feel of the site. */
     background: #fff;
 }
 
+h1 {
+    font-size: 65px;
+}
+
 .contact-section {
     height: 100%;
     padding-top: 150px;
@@ -119,4 +123,16 @@ of those sections to manage the look and feel of the site. */
     padding-top: 300px;
 }
 
+#stats-table {
+    text-align: center;
+    width: 100%;
+}
 
+#stats-container {
+    padding-top: 20px;
+    font-size:20px;
+}
+
+#stats-container .row {
+    padding-top: 15px;
+}
