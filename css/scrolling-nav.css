@@ -39,6 +39,16 @@ of those sections to manage the look and feel of the site. */
     background: #eee;
 }
 
+.facts-desc {
+    list-style-type: none;
+}
+
+.facts-wrapper {
+    padding-top: 50px;
+    font-size: 20px;
+
+}
+
 .about-section {
     height: 100%;
     padding-top: 150px;
@@ -85,6 +95,21 @@ of those sections to manage the look and feel of the site. */
     font-weight: 700;
 }
 
+.blue
+{
+    color: #43B3AE;
+}
+
+.white
+{
+    color: #FFF;
+}
+
+.big-font
+{
+    font-size: 40px;
+}
+
 #top-content {
     float: left;
     position: relative;
@@ -93,3 +118,5 @@ of those sections to manage the look and feel of the site. */
     padding-left: 40px;    
     padding-top: 300px;
 }
+
+
