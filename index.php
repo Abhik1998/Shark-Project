@@ -34,31 +34,19 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
    <script>
-      function facebookInit() {
-   		FB.ui(
-	    {
-	    	method: 'share',
-	        href: 'https://develpers.facebook.com/docs/'
-	    }, function(response){});
-	}
-
       window.fbAsyncInit = function() {
         FB.init({
           appId      : '393687624156866',
           xfbml      : true,
           version    : 'v2.3'
-        });
-
-	    if (typeof facebookInit == 'function') {
-	        facebookInit();
-	    }        
+        });    
       };
 
       (function(d, s, id){
          var js, fjs = d.getElementsByTagName(s)[0];
          if (d.getElementById(id)) {return;}
          js = d.createElement(s); js.id = id;
-         js.src = "https://connect.facebook.net/en_US/sdk.js%20net::ERR_FILE_NOT_FOUND";
+         js.src = "https://connect.facebook.net/en_US/sdk.js";
          fjs.parentNode.insertBefore(js, fjs);
        }(document, 'script', 'facebook-jssdk'));
     </script>
@@ -74,7 +62,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand page-scroll" href="#page-top">WaterMelon</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -85,21 +73,16 @@
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#facts">Facts</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a class="page-scroll" href="#services">Track Your Water Usage</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
-                                    <div
-                                      class="fb-like"
-                                      data-send="true"
-                                      data-width="450"
-                                      data-show-faces="true">
-                                    </div>
+                <div class="fb-like" data-href="https://www.facebook.com/WaTerMelOn2015425" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -131,7 +114,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Facts About California's Water Usage</h1>
+                    <h1>Facts About San Diego's Water Usage</h1>
                 </div>
             </div>
             <div class="row">
@@ -154,8 +137,15 @@
                         <i class="fa fa-circle fa-stack-2x blue"></i>
                         <i class="fa fa-tint fa-stack-1x white"></i>
                     </span>                 
-                    <div>San Diego's rainfall in 2014 was<div class="blue big-font">49%</div>of normal levels.
-                </div>                            		
+                    <div>San Diego's rainfall in 2014 was<div class="blue big-font">49%</div>of normal levels.</div>
+                </div>    
+                <div class ="facts-wrapper col-md-3 col-sm-6">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x blue"></i>
+                        <i class="fa fa-chevron-down fa-stack-1x white"></i>
+                    </span>                 
+                    <div>The water supply in San Diego has already been cut by<div class="blue big-font">15%.</div></div>
+                </div>                          		
 	         </div>
         </div>
     </section>
@@ -165,7 +155,29 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Services Section</h1>
+                    <h1>How much water did you use today</h1>
+                    <table>
+                          <tr>
+                            <td>Taking Shower</td>
+                            <td><input type="text" name="stime"> mins</td>      
+                          </tr>
+                          <tr>
+                            <td>Flushing Toilets</td>
+                            <td><input type="text" name="ftime"> times</td>     
+                          </tr>
+                          <tr>
+                            <td>Washing Dishes</td>
+                            <td><input type="text" name="wtime"> mins</td>      
+                          </tr>
+                          <tr>
+                            <td>Doing Laundry</td>
+                            <td><input type="text" name="ltime"> times</td>     
+                          </tr>
+                          <tr>
+                            <td>Brushing Teeth</td>
+                            <td><input type="text" name="btime"> mins</td>      
+                          </tr>
+                    </table>
                 </div>
             </div>
         </div>
