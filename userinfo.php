@@ -40,7 +40,7 @@ if (empty($_POST['wash_teeth'])){
   $dbc = @mysqli_connect (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) OR 
   die('Could not connect to MySQL:' . mysqli_connect_error() );
 
-  $sql = "INSERT INTO `book`.`book1` (`shower`, `washteeth`, `dishes`, `toilet`, `laundry`) VALUES ('', '', '', '', ''), ('5', '10', '40', '10', '80');";
+  $sql = "INSERT INTO `book`.`book2` (`shower`, `washteeth`, `dishes`, `toilet`, `laundry`) VALUES ('', '', '', '', ''), ('5', '10', '40', '10', '80');";
   $r= @mysqli_query($dbc, $sql);
 
 

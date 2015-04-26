@@ -62,7 +62,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">WaterMelon</a>
+                <a class="navbar-brand page-scroll" href="#page-top">WaTerMelOn</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -146,7 +146,6 @@
 	         </div>
         </div>
     </section>
-
     <!-- Services Section -->
     <section id="services" class="services-section">
         <div class="container">
@@ -154,33 +153,41 @@
                 <h1>How much water did <span class="blue">YOU</span> use today?</h1>
                 <div class="col-md-6 col-sm-10 col-md-offset-1">
                     <div id="stats-container">
-                        <div class="row">
-                          <div class="col-md-4">Showering</div>
-                          <div class="col-md-4"><input type="text" name="stime"></div><div class="col-md-4">mins</div>    
-                        </div>
-                        <div class="row">
-                          <div class="col-md-4">Flushing Toilets</div>
-                          <div class="col-md-4"><input type="text" name="stime"></div><div class="col-md-4">times</div>   
-                        </div>
-                        <div class="row">
-                          <div class="col-md-4">Washing Dishes</div>
-                          <div class="col-md-4"><input type="text" name="stime"></div><div class="col-md-4">mins</div>    
-                        </div>
-                        <div class="row">
-                          <div class="col-md-4">Doing Laundry</div>
-                          <div class="col-md-4"><input type="text" name="stime"></div><div class="col-md-4">times</div>    
-                        </div>
-                        <div class="row">
-                          <div class="col-md-4">Brushing Teeth</div>
-                          <div class="col-md-4"><input type="text" name="stime"></div><div class="col-md-4">mins</div>    
-                        </div>    
-                        <div class="row">
-                            <div class="col-md-12">
-                                <button type="button" class="btn btn-default btn-lg">
-                                  Submit
-                                </button>
+                        <form action="userinfo.php" method="post">
+                            <div class="row">
+                              <div class="col-md-4">Showering</div>
+                              <div class="col-md-4"><input type="text" name="shower" 
+                              value ="<?php if (isset($_POST['shower'])) echo $_POST['$fn']; ?>"/></div><div class="col-md-4">mins</div>    
                             </div>
-                        </div>    
+                            <div class="row">
+                              <div class="col-md-4">Flushing Toilets</div>
+                              <div class="col-md-4"><input type="text" name="toilet"
+                              value ="<?php if (isset($_POST['toilet'])) echo $_POST['$hn']; ?>" />
+                              </div><div class="col-md-4">times</div>   
+                            </div>
+                            <div class="row">
+                              <div class="col-md-4">Washing Dishes</div>
+                              <div class="col-md-4"><input type="text" name="dishes"
+                              value ="<?php if (isset($_POST['dishes'])) echo $_POST['$gn']; ?>" /></div><div class="col-md-4">mins</div>    
+                            </div>
+                            <div class="row">
+                              <div class="col-md-4">Doing Laundry</div>
+                              <div class="col-md-4"><input type="text" name="laundry"
+                              value ="<?php if (isset($_POST['laundry'])) echo $_POST['$mn']; ?>" /></div><div class="col-md-4">times</div>    
+                            </div>
+                            <div class="row">
+                              <div class="col-md-4">Brushing Teeth</div>
+                              <div class="col-md-4"><input type="text" name="wash_teeth"
+                              value ="<?php if (isset($_POST['wash_teeth'])) echo $_POST['$ln']; ?>"/></div><div class="col-md-4">mins</div>    
+                            </div>    
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button type="submit" name="submit" class="btn btn-default btn-lg">
+                                      Submit
+                                    </button>
+                                </div>
+                            </div>    
+                        </form>
                     </div>
                 </div>
             </div>
