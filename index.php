@@ -78,6 +78,9 @@
                     <li>
                         <a class="page-scroll" href="#services">Track Your Water Usage</a>
                     </li>
+                    <li>
+                        <a class="page-scroll" href="#contacts">Resources</a>
+                    </li>
                 </ul>
                 <div class="fb-like" data-href="https://www.facebook.com/WaTerMelOn2015425" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
             </div>
@@ -238,7 +241,7 @@ if (empty($_POST['wash_teeth'])){
                             </div>    
                             <div class="row">
                                 <div class="col-md-12">
-                                    <button type="submit" name="submit" class="btn btn-default btn-lg">
+                                    <button type="button" onclick="" class="btn btn-default btn-lg" width="100px">
                                       Submit
                                     </button>
                                 </div>
@@ -250,16 +253,23 @@ if (empty($_POST['wash_teeth'])){
         </div>
     </section>
 
-    <!-- Contact Section 
+    <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Contact Section</h1>
+                    <h1>Resources</h1>
+                    <div>
+                        <ul>
+                            <li><a href="http://www.sandiego.gov/water/">San Diego Water</a></li>
+                            <li><a href="http://ca.gov/drought/">California Drought News</a></li>
+                            <li><a href="http://www.ecotechwater.com/Company/watertrivia.html">Water Trivia</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>-->
+    </section>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -270,7 +280,7 @@ if (empty($_POST['wash_teeth'])){
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
-
+<footer class="footer"></footer>
 </body>
 
 </html>
