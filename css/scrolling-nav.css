@@ -145,3 +145,13 @@ ul
 {
     list-style-type: none;
 }
+
+#e {
+    padding-top:10px;
+    font-size: 30px;
+}
+
+#bot {
+    padding-top:20px;
+    font-size: 30px;
+}

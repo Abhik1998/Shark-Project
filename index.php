@@ -251,9 +251,12 @@ if (empty($_POST['wash_teeth'])){
                     </div>
                 </div>
                 <div id="e">
-                    <p>If you can conserve 8 gallons of water per day, you provide enough water for another person to live for a day. </p>
+                    <img src="img/graph.jpg" width="400px">
 
                 </div>
+            </div>
+            <div id="bot">
+              <p>If you can conserve 8 gallons of water per day, you provide enough water for another person to live for a day. </p>
             </div>
         </div>
     </section>
