@@ -241,13 +241,20 @@ if (empty($_POST['wash_teeth'])){
                             </div>    
                             <div class="row">
                                 <div class="col-md-12">
-                                    <button type="button" onclick="" class="btn btn-default btn-lg" width="100px">
+                                    <button type="submit" name="submit" class="btn btn-default btn-lg" width="100px">
+                                      
+                                    </button>
+                                    <button type="button" onclick="function(){}" class="btn btn-default btn-lg" width="100px">
                                       Submit
                                     </button>
                                 </div>
                             </div>    
                         </form>
                     </div>
+                </div>
+                <div id="e">
+                    <p>If you can conserve 8 gallons of water per day, you provide enough water for another person to live for a day. </p>
+                    
                 </div>
             </div>
         </div>
