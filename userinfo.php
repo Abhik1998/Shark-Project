@@ -40,7 +40,7 @@ if (empty($_POST['wash_teeth'])){
   $dbc = @mysqli_connect (DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) OR 
   die('Could not connect to MySQL:' . mysqli_connect_error() );
 
-  $sql = "INSERT INTO book (shower, washteeth, dishes, toilet,laundry) VALUES ('$fn', '$ln','$gn','$hn','$mn', NOW())";
+  $sql = "INSERT INTO `book`.`book1` (`shower`, `washteeth`, `dishes`, `toilet`, `laundry`) VALUES ('', '', '', '', ''), ('5', '10', '40', '10', '80');";
   $r= @mysqli_query($dbc, $sql);
 
 
@@ -61,15 +61,15 @@ if (empty($_POST['wash_teeth'])){
 
   <form style= "text-align:center" action= "userinfo.php" method= "post">
   <p> Shower: <br><input type = "text" name= "shower" size="4" maxlength= "20"
-  value ="<?php if (isset($_POST['shower'])) echo $_POST['shower']; ?>" /> </p>
+  value ="<?php if (isset($_POST['shower'])) echo $_POST['$fn']; ?>" /> </p>
   <p> Wash Teeth:<br> <input type = "text" name= "wash_teeth" size="2" maxlength= "20"
-  value ="<?php if (isset($_POST['wash_teeth'])) echo $_POST['wash_teeth']; ?>" /> </p>
+  value ="<?php if (isset($_POST['wash_teeth'])) echo $_POST['$ln']; ?>" /> </p>
   <p> Dishes:<br> <input type = "text" name= "dishes" size="4" maxlength= "20"
-  value ="<?php if (isset($_POST['dishes'])) echo $_POST['dishes']; ?>" /> </p>
+  value ="<?php if (isset($_POST['dishes'])) echo $_POST['$gn']; ?>" /> </p>
   <p> Toilet:<br> <input type = "text" name= "toilet" size="2" maxlength= "20"
-  value ="<?php if (isset($_POST['toilet'])) echo $_POST['toilet']; ?>" /> </p>
+  value ="<?php if (isset($_POST['toilet'])) echo $_POST['$hn']; ?>" /> </p>
   <p> Laundry:<br> <input type = "text" name= "laundry" size="4" maxlength= "20"
-  value ="<?php if (isset($_POST['laundry'])) echo $_POST['laundry']; ?>" /> </p>
+  value ="<?php if (isset($_POST['laundry'])) echo $_POST['$mn']; ?>" /> </p>
   <p><input type= "submit" name= "submit" value= "Results"/></p>
   </form>
 
